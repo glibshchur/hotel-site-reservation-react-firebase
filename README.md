@@ -1,11 +1,15 @@
+# This project is modification of an e-commerce project
+Original can be found here https://github.com/f3styr/e-commerce
 
+# React Firebase Hotel Reservation
+Dynamic single page hotel reservation application using React, firebase and material-ui.
 
-# React Firebase Shop
-Dynamic single page e-commerce application using React, firebase and material-ui.
-
-# Demo 
+# Demo of original project
 https://e-commerce-1febb.web.app/  
 Admin account email: `admin@admin.admin` password: `admin123`
+
+# Demo of this project
+https://bestforrest-bc994.web.app/
 
 # Features
 
@@ -67,20 +71,7 @@ Session based and have support for administrator accounts.
 * Enable storage
 * Enable authentication with email and password
 * https://firebase.google.com/docs/web/setup
-* Create .env file in the project root directory. It should look like this
-```
-REACT_APP_API_KEY=XXXXXXXXXXXXXXXXXXX
-REACT_APP_AUTH_DOMAIN=XXXXXXXXXXXXXXXXXXX
-REACT_APP_DATABASE_URL=XXXXXXXXXXXXXXXXXXX
-  
-REACT_APP_PROJECT_ID=XXXXXXXXXXXXXXXXXXX
-REACT_APP_STORAGE_BUCKET=XXXXXXXXXXXXXXXXXXX
-REACT_APP_MESSAGING_SENDER_ID=XXXXXXXXXXXXXXXXXXX
-REACT_APP_APP_ID=XXXXXXXXXXXXXXXXXXX
-REACT_APP_MEASUREMENT_ID=XXXXXXXXXXXXXXXXXXX
-```
 * run `firebase deploy` to deploy the whole project to firebase hosting
-* or run  `firebase deploy --only database` to deploy only the database rules
   
 
 # How to create an admin account
