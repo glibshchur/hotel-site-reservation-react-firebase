@@ -1,0 +1,14 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <defs>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_1_blur">
+   <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+  </filter>
+ </defs>
+
+
+ <g>
+  <title>Layer 1</title>
+  <text font-style="normal" font-weight="bold" filter="url(#svg_1_blur)" stroke="#2C2A2B" transform="matrix(8.139964174214045,0,0,9.566411001206374,-2238.1573942278287,-1802.5221761851824) " xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="24" id="svg_1" y="216.997771" x="275" fill="#2C2A2B">house</text>
+ </g>
+</svg>

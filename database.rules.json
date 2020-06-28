@@ -1,0 +1,39 @@
+{
+  "rules": {
+		"archive":{
+      ".read": "auth != null && root.child('admins/'+ auth.uid +'/isAdmin').val() == true",
+      ".write": "auth != null && root.child('admins/'+ auth.uid +'/isAdmin').val() == true",
+    },
+    "products":{
+      ".indexOn":["name", "price", "categoryId"],
+      ".read": true,  
+      ".write": "auth != null && root.child('admins/'+ auth.uid +'/isAdmin').val() == true",
+        
+    	"name":{
+        ".validate": "newData.val().length > 0"
+      },
+    },
+      
+     "admins":{
+       ".read": true,
+       ".write": false,
+     }, 
+     "users":{
+       "$uid":{         
+          ".read": "auth.uid == $uid || (auth != null && root.child('admins/'+ auth.uid +'/isAdmin').val() == true)",  
+        	".write": "auth.uid == $uid || (auth != null && root.child('admins/'+ auth.uid +'/isAdmin').val() == true)",  
+       }
+       
+    },
+      
+     "categories":{ 
+       ".read": true,
+      ".write": "auth != null && root.child('admins/'+ auth.uid +'/isAdmin').val() == true",            	
+    },
+      
+      "orders":{
+        ".write": true,
+        ".read": "auth != null && root.child('admins/'+ auth.uid +'/isAdmin').val() == true",
+      }
+  }
+}
